@@ -1,0 +1,111 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.react-responsive-modal-modal {
+  max-width: 900px !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  border-radius: 10px;
+}
+
+.ant-dropdown {
+  min-width: 323px !important;
+  top: 69px !important;
+  left: 918px !important;
+}
+
+.react-responsive-modal-closeButton {
+  outline: none;
+}
+
+.react-chatbot-kit-chat-container {
+  margin: 40px 0;
+  display: flex;
+  justify-content: center;
+  position: fixed !important;
+  right: 40px;
+  bottom: 40px;
+  z-index: 9999;
+  box-shadow: 5px 5px 13px rgb(91 81 81 / 40%);
+  border-radius: 5px;
+  width: 280px !important;
+}
+
+.MuiInput-underline:after {
+  border-bottom: 2px solid #00d09c !important;
+}
+
+.MuiFormLabel-root.Mui-focused {
+  color: #00d09c !important;
+}
+
+.MuiFormLabel-root.Mui-error {
+  color: #f44336 !important;
+}
+
+.MuiInput-underline.Mui-error:after {
+  border-bottom-color: #f44336 !important;
+}
+
+.MuiFormControl-root {
+  margin-bottom: 28px !important;
+}
+
+.MuiButton-containedPrimary {
+  background-color: #00d09c !important;
+}
+
+.MuiButton-containedPrimary:hover {
+  background-color: #00d09c !important;
+}
+
+.MuiButton-root {
+  height: 45px !important;
+  font-size: 16px !important;
+  font-weight: 600 !important;
+  margin-top: 8px !important;
+}
+
+.chipsm {
+  width: 80% !important;
+}
+
+.MuiCheckbox-colorPrimary.Mui-checked {
+  color: #00d09c !important;
+}
