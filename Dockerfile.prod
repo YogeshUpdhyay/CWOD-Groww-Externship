@@ -1,0 +1,23 @@
+# base node image
+FROM node:14.15.5-alpine
+
+WORKDIR /home/yogesh/app
+
+# adding user
+RUN addgroup -S yogesh && adduser -S yogesh -G yogesh
+RUN chown yogesh /home/yogesh/app
+
+USER yogesh
+
+# installing packages
+COPY --chown=yogesh:yogesh package*.json ./
+RUN npm install --only=prod
+
+# adding code 
+ADD . .
+
+# exposing port
+EXPOSE 4000
+
+# starting server
+CMD ["npm", "start"]
